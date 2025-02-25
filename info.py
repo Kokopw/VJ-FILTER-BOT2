@@ -113,21 +113,21 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 # Token Verification Info :
 VERIFY = bool(environ.get('VERIFY', True))
-VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'adsfly.in')
-VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', 'ee5868654d787db9ddd2352a5c0151b15a1a2ea6')
+VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'modijiurl.com')
+VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '0f679f8e7f174b89bf0f5eeb3c594d21fe587266')
 VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/Howtodownload89/4')
 
 # If You Fill Second Shortner Then Bot Attach Both First And Second Shortner And Use It For Verify.
 VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', True))
 # if verify second shortner is True then fill below url and api
-VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', 'adsfly.in')
-VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', 'ee5868654d787db9ddd2352a5c0151b15a1a2ea6')
+VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', 'modijiurl.com')
+VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '0f679f8e7f174b89bf0f5eeb3c594d21fe587266')
 
 
 # Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True)) # Set True Or False
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'adsfly.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'ee5868654d787db9ddd2352a5c0151b15a1a2ea6')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'modijiurl.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '0f679f8e7f174b89bf0f5eeb3c594d21fe587266')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Howtodownload89/4') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
 
 
