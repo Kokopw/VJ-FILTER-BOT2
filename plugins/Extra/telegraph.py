@@ -8,7 +8,7 @@ CATBOX_API = "https://catbox.moe/user/api.php"
 # Step 1: Ask for media when using /telegraph
 @Client.on_message(filters.command("telegraph") & filters.private)
 async def ask_for_media(client, message: Message):
-    await message.reply_text("📸 **Send me your image, video, or audio file (max 200MB)** to upload on Catbox.")
+    await message.reply_text("📸 **Sᴇɴᴅ ᴍᴇ ʏᴏᴜʀ ɪᴍᴀɢᴇ, ᴠɪᴅᴇᴏ, ᴏʀ ᴀᴜᴅɪᴏ ғɪʟᴇ (ᴍᴀx 𝟸𝟶𝟶MB)** ᴛᴏ ᴜᴘʟᴏᴀᴅ ᴏɴ Cʜᴀʀʟɪᴇ Sᴇʀᴠᴇʀ.")
 
 
 # Step 2: Handle media upload
