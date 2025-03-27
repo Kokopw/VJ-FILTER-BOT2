@@ -1,8 +1,3 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
-
 import os
 import requests
 from pyrogram import Client, filters
@@ -10,12 +5,12 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 CATBOX_API = "https://catbox.moe/user/api.php"
 
-@Client.on_message(filters.command(["img", "cup", "catbox"], prefixes="/") & filters.reply)
+@Client.on_message(filters.command("telegraph") & filters.reply)
 async def c_upload(client, message: Message):
     reply = message.reply_to_message
 
     if not reply.media:
-        return await message.reply_text("**Reply to an image, video, or audio file (max 200MB) to upload to Charlie Server.**")
+        return await message.reply_text("**Reply to an image, video, or audio file (max 200MB) to upload to Catbox.**")
 
     if reply.document and reply.document.file_size > 200 * 1024 * 1024:
         return await message.reply_text("**File size limit is 200MB for Catbox.**")
@@ -58,4 +53,3 @@ async def c_upload(client, message: Message):
 
     except Exception as e:
         await uploading_msg.edit_text(f"**Error:** `{str(e)}`")
-    
