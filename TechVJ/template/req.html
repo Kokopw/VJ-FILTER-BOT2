@@ -368,10 +368,10 @@
         const  Link = videolink.replace("/watch/", "/");
 
         function vlc_player() {
-            const videoElement = document.getElementById('player');
-            const openLink = videoElement.querySelector('source').getAttribute('src');
-            const openVlc = `vlc://${openLink}`;
-            window.location.href = openVlc;
+    // Use the direct file URL from the video source
+           const openLink = "{{file_url}}"; // This should match your template variable
+           const openVlc = `vlc://${openLink}`;
+           window.location.href = openVlc;
         }
 	    
 	function mx_player() {
