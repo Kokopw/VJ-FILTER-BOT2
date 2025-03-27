@@ -368,7 +368,8 @@
         const  Link = videolink.replace("/watch/", "/");
 
         function vlc_player() {
-            const openLink = Link;
+            const videoElement = document.getElementById('player');
+            const openLink = videoElement.querySelector('source').getAttribute('src');
             const openVlc = `vlc://${openLink}`;
             window.location.href = openVlc;
         }
